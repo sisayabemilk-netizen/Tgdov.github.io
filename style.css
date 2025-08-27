@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f9ff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.payment-box {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.note {
+  background: #eef;
+  padding: 10px;
+}
+
+.warning {
+  color: red;
+  font-weight: bold;
+}
+
+.tabs {
+  margin: 20px 0;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background: #ddd;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+.tab-button.active {
+  background: #007bff;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  margin: 20px auto;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.tab-content.active {
+  display: block;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #28a745;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+form button:hover {
+  background: #218838;
+}
+
+.support-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.success {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #e0ffe5;
+  border: 2px solid #28a745;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.success img {
+  width: 60px; /* small-medium size */
+}
+
+.hidden {
+  display: none;
+}

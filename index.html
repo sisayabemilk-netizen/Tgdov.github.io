@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telegram Escrow Trade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Payment Info -->
+  <div class="payment-box">
+    <strong>Telebirr Payment:</strong> 0911357800 (Name: Yafet)
+  </div>
+
+  <!-- Notes -->
+  <div class="note">
+    <p><b>Note:</b> Only 10% fee for DOV orders.</p>
+    <p class="warning">⚠️ Don’t give group/channel before your order is accepted!</p>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-button active" onclick="openTab('buyer', event)">Buyer</button>
+    <button class="tab-button" onclick="openTab('seller', event)">Seller</button>
+    <button class="tab-button" onclick="openTab('support', event)">Support</button>
+    <button class="tab-button" onclick="openTab('feedback', event)">Feedback</button>
+  </div>
+
+  <!-- Buyer Form -->
+  <div id="buyer" class="tab-content active">
+    <h2>Buyer Form</h2>
+    <form id="buyerForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="text" placeholder="Seller Username" required>
+      <input type="text" placeholder="Group/Channel Link" required>
+      <input type="number" placeholder="Amount (ETB)" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <label>Send Proof Screenshot:</label>
+      <input type="file" accept="image/*">
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+
+  <!-- Seller Form -->
+  <div id="seller" class="tab-content">
+    <h2>Seller Form</h2>
+    <form id="sellerForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="text" placeholder="Buyer Username" required>
+      <input type="text" placeholder="Group/Channel Link" required>
+      <input type="number" placeholder="Price (ETB)" required>
+      <p class="note-small">After submitting, contact support to finalize your trade.</p>
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+
+  <!-- Support Tab -->
+  <div id="support" class="tab-content">
+    <h2>Contact Support</h2>
+    <a href="https://t.me/ab_e_n_i" target="_blank" class="support-btn">Message @ab_e_n_i</a>
+    <a href="https://t.me/melek_sis21" target="_blank" class="support-btn">Message @melek_sis21</a>
+  </div>
+
+  <!-- Feedback Tab -->
+  <div id="feedback" class="tab-content">
+    <h2>Send Feedback</h2>
+    <form id="feedbackForm">
+      <textarea placeholder="Your feedback (optional)"></textarea>
+      <button type="submit">Send Feedback</button>
+    </form>
+  </div>
+
+  <!-- Success Message -->
+  <div id="successMessage" class="success hidden">
+    <img src="https://cdn-icons-png.flaticon.com/512/845/845646.png" alt="success">
+    <p>Order is processing... wait 5–10 min</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
